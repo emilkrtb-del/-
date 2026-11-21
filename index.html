@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTrade Lab — Сервис оценки и Trade-In</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="project-header">
+    <div class="badge">Студенческий проект • ViaDigital</div>
+    <h1>Каталог Trade-In: Оценка и выкуп техники</h1>
+    <p>Дисциплина: Электронная коммерция и веб-разработка</p>
+  </header>
+
+  <main class="wrap">
+    <div class="controls">
+      <div class="field">
+        <label for="brandName">Название проекта</label>
+        <input id="brandName" type="text" value="SmartTrade Lab">
+      </div>
+
+      <div class="field">
+        <label for="categoryName">Категория</label>
+        <select id="categoryName">
+          <option>Смартфоны Apple</option>
+          <option>Смартфоны Android</option>
+          <option>Ноутбуки и планшеты</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="countInput">Позиций (1–50)</label>
+        <input id="countInput" type="number" value="3" min="1" max="50">
+      </div>
+
+      <button id="generateBtn">Сгенерировать базу</button>
+    </div>
+
+    <div id="list" class="cards-grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
